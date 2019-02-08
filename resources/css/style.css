@@ -318,6 +318,19 @@ row {margin: 0 -5px;}
   margin: 40px;
 }
 
+.card-members-small {
+    align-self: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width:  250px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+    background-color: rgba(18, 18, 59, 0.86);
+    float: left;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
 .title {
   color: grey;
   font-size: 18px;
@@ -351,11 +364,22 @@ button-members:hover, a:hover {
   width: 50%;
 }
 
+.kickstart-photo-member {
+    position: relative;
+    width: 50%;
+  }
+
 .image {
   display: block;
   width: 300px;
   height: auto;
 }
+
+.image-members {
+    display: block;
+    width: 250px;
+    height: auto;
+  }
 
 .overlay {
   position: absolute;
@@ -370,9 +394,27 @@ button-members:hover, a:hover {
   background-color: rgba(18, 18, 59, 0.86)
 }
 
+.overlay-members {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 250px;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(18, 18, 59, 0.86)
+  }
+
 .kickstart-photo:hover .overlay {
   opacity: 1;
 }
+.kickstart-photo-member:hover .overlay-members {
+    opacity: 1;
+ }
+
+
 
 .text {
   color: white;
@@ -386,6 +428,20 @@ button-members:hover, a:hover {
   text-align: center;
   width: 300px;
 }
+
+.text-members {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 250px;
+  }
+  
 
 /* Style the bar for the unit*/
 .navbar {
